@@ -1,0 +1,16 @@
+# Problem: String Validators
+# Platform: HackerRank
+# Description: Check if a string contains alphanumeric, alphabetic, digit, lowercase, and uppercase characters.
+
+
+if __name__ == '__main__':
+    s=input()
+    if 0< len(s) < 1000:
+        print(any(i.isalnum() for i in s))
+        print(any(i.isalpha() for i in s))
+        print(any(i.isdigit() for i in s))
+        print(any(i.islower() for i in s))
+        print(any(i.isupper() for i in s))
+
+
+
